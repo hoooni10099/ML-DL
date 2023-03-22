@@ -35,3 +35,12 @@ n_arr[:, :: 2]
 # 홀수번째 열만 출력
 
 
+c = n_arr[0]
+d = n_arr[1]
+e = np.concatenate((c, d))
+e = e.reshape(5, 2)
+#[[0 1]
+  [2 3]
+  [4 5]
+  [6 7]
+  [8 9]]
