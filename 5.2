@@ -4,3 +4,7 @@ sns.pairplot(tips, kind = 'hist')
 plt.show()
 
 
+sns.set_theme(style = "darkgrid")
+tips = sns.load_dataset("tips")
+sns.pairplot(tips, kind = 'kde')
+plt.show()
