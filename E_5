@@ -17,3 +17,7 @@ titanic = sns.load_dataset("titanic")
 sns.countplot(data = titanic, x = "class", hue = "who")
 plt.show()
 
+#5.2.2
+
+sns.relplot(data = titanic, x = "age", y = "fare", col = "survived")
+plt.show()
