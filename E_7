@@ -1,0 +1,9 @@
+import seaborn as sns
+
+sns.set_theme(style = "darkgrid")
+
+flight = sns.load_dataset("flights")
+flights.shape
+flights.head()
+
+
