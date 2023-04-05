@@ -1,0 +1,32 @@
+imort numpy as np
+import mayplotlib.pyplot as plt
+
+m = 100
+X = 8 * np.random.rand(m, 1) - 4
+y = .5 * X ** 3 + .5 * X ** 2 + X + 3 + np.random.randn(m, 1)
+plt.figure(figsize = (6, 5))
+plt. plot(X, y, "b^")
+
+
+from sklearn.preprocessing import PolynomialFeatures
+from sklearn.linear_model import LinearRegression
+
+poly_features = PolynomialFeatrues(degree = 3, include_bias = False)
+X_poly = poly_features.fit_transform(X)
+regr = LinearRegression()
+regr.fit(X_poly, y)
+
+print('다항 회귀 모델의 점수 = ', regr.score(X_poly, y).round(3))
+print('다항 회귀 모델의 계수 = ', regr.coef_)
+print('절편 = ', regr.intercept)
+
+X_new = np.linspace(-4, 4, 100.reshape(100, 1))
+X_new_poly = poly_features.transform(X_new)
+y_new = regr.predict(X_new_poly)
+
+plt.figure(figsize = (6, 6))
+plt.plot(X, y, "b^", label = 'Data')
+plt.plot(X_new, y_new, "r-", label = "Prediction")
+plt.legend()
+
+plt.show()
