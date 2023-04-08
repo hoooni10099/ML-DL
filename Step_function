@@ -1,0 +1,14 @@
+def step_function(x):
+    if x < 0:
+        return 0
+    else:
+        return 1
+        
+# step_function(3.0)
+1
+# step_function(0.0)
+0
+# step_function(0.1)
+1
+
+
