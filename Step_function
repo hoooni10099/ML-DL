@@ -32,3 +32,10 @@ y = y.astype(np.int)
 # y
 array([0, 1, 1])
 
+
+--------------------------------------
+
+def step_function(x):
+    return np.array(x > 0, dtype = np.int)
+
+
