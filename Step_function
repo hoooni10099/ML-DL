@@ -26,3 +26,9 @@ y = x > 0
 
 # y
 array([False, True, True])
+
+y = y.astype(np.int)
+
+# y
+array([0, 1, 1])
+
