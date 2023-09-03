@@ -12,3 +12,6 @@
 Regression -> Identity function
 
 Classification -> Softmax function
+
+Softmax function's Value can interpret "Probability"
+
