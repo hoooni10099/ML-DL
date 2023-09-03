@@ -10,4 +10,5 @@
 딥러닝 + 인공지능 독학
 
 Regression -> Identity function
+
 Classification -> Softmax function
